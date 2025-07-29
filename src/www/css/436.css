@@ -1,0 +1,6 @@
+
+/* q-grid  hide-bottom hide-pagination 无效，只能用过 Css 处理 */
+.q-table__bottom.row.items-center.justify-end {
+  display: none;
+}
+

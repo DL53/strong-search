@@ -1,0 +1,35 @@
+{
+   "background": {
+      "service_worker": "service_worker.js",
+      "type": "module"
+   },
+   "action": {
+      "default_title": "强悍搜索"
+   },
+   "content_scripts": [ {
+      "css": [ "css/content-css.css" ],
+      "js": [ "www/js/bex-content-script.js", "js/content-script.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "content_security_policy": {"extension_pages": "script-src 'self'; object-src 'self';"},
+   "description": "一个人性化、可自定义的多引擎搜索扩展",
+   "homepage_url": "https://w3ctim.com/strongsearch",
+   "icons": {
+      "128": "icons/icon-128x128.png",
+      "16": "icons/icon-16x16.png",
+      "48": "icons/icon-48x48.png"
+   },
+   "manifest_version": 3,
+   "name": "强悍搜索v3修改版（划词搜索全选项）",
+   "options_page": "www/index.html#/options",
+   "permissions": [  "storage", "activeTab" ],
+   "host_permissions": ["\u003Call_urls>"],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.2",
+   "web_accessible_resources": [
+   {
+     "resources": ["www/*", "js/*", "css/*", "\u003Call_urls>" ],
+     "matches": [ "*://*/*"]
+    }
+    ]
+}
