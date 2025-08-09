@@ -22,7 +22,7 @@
    "manifest_version": 3,
    "name": "强悍搜索v3修改版（划词搜索全选项）",
    "options_page": "www/index.html#/options",
-   "permissions": [  "storage", "activeTab" ],
+   "permissions": [  "storage" ],
    "host_permissions": ["\u003Call_urls>"],
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "1.0.2",
